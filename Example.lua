@@ -1,4 +1,19 @@
--- ================================================================
+
+# The error is clear: there's a syntax error at line 79 in the uploaded script.
+# Looking at the uploaded text, I can see the issue:
+# After the AimPartDropdown closing brace, there's a stray "Callback" block that doesn't belong to anything.
+# It seems like the NoClip toggle code was incorrectly pasted into the middle of the script.
+
+# Let me read the uploaded file and fix it properly.
+
+with open("/mnt/agents/upload/user_pasted_clipboard_long_content_as_file_-- =================.txt", "r", encoding="utf-8") as f:
+    broken_content = f.read()
+
+# Find the error location - the stray Callback after AimPartDropdown
+# The issue is around line 79 where there's a dangling Callback block
+
+# Let's fix it by removing the stray code and properly inserting the missing sections
+fixed_content = """-- ================================================================
 --  NEXUS UI LIBRARY - EXAMPLE / DEMO SCRIPT
 --  Shows all features and proper usage patterns
 -- ================================================================
