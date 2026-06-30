@@ -3,7 +3,7 @@
 --  Shows all features and proper usage patterns
 -- ================================================================
 
-local Nexus = loadstring(game:HttpGet("https://raw.githubusercontent.com/makarmatvij7-svg/NexusUII/main/NexusUI.lua"))()
+local Nexus = loadstring(game:HttpGet("https://raw.githubusercontent.com/makarmatvij7-svg/NexusUII/main/NexusUI.lua"))())
 -- Or if local: local Nexus = require(path.to.NexusUI)
 
 -- Create the main window
